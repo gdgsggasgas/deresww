@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matueszg Automation Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Matueszg Team</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul><div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+    <label for="msg"><b>Enter your question here</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+		
+			<img src="te.png" alt="teamwork" class="homepage-image"><p>"The Best Work, Done by the Best Team.""Results You Can Count On, Quality You Can Trust."</p>
+            <a href="#contact" class="cta-button">Hire Us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a professional and dynamic team of digital marketers, YouTube specialists, and skilled video editors committed to elevating your brand. With over 5 years of experience in digital marketing, YouTube strategy, video editing, website design, and app development, Our comprehensive services cover all aspects of website design and app development, delivering user-friendly and visually appealing solutions. With a focus on strategy and creativity, we help businesses thrive in the digital space, ultimately driving growth and engagement. Let's collaborate to bring your vision to life! I help clients achieve their business goals through my exceptional services. Let me assist you in building your next project!</p>
+        </div>
+		<h2> Meet The Team </h2>
+		<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+       <img src="team1.jpg" alt="team1" width="100">
+      <div class="container">
+        <h3>Matuesz Gavin</h3>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>matueszgavin@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+       <img src="team2.jpg" alt="team2" width="100">
+      <div class="container">
+        <h3>Wilbur Hoffmann</h3>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="team3.jpg" width="100">
+      <div class="container">
+        <h3>Mlissa Oneil </h3>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Our web development team boasts over 5 years of experience in creating dynamic, user-friendly websites tailored to your needs. We specialize in responsive design, seamless functionality, and innovative solutions that enhance user experience. Let us help you establish a strong online presence and achieve your ultimate vision!</p>
+                </div>
+                <div class="service-item">
+                    <h3>Youtube Automation</h3>
+                    <p>Our YouTube automation team offers over 5 years of expertise in streamlining your channel's growth and engagement. We specialize in content optimization, analytics, and audience targeting to enhance your reach and efficiency. Let us help you automate your processes and achieve ultimate success on youtube channel!</p>
+                </div>
+				<div class="service-item">
+                    <h3>Graphic Design</h3>
+                    <p>Our graphic design team brings over 5 years of experience in crafting visually stunning and impactful designs. We specialize in branding, marketing materials, and digital assets that capture your unique vision and resonate with your audience. From logos to promotional graphics, we create compelling visuals that elevate your brand and engage your customers!</p>
+                </div>
+				<div class="service-item">
+                    <h3>Dropshipping</h3>
+                    <p>Our dropshipping team brings over 5 years of experience in creating successful e-commerce solutions. We specialize in sourcing products, managing inventory, and optimizing your online store for maximum sales. With a focus on efficiency and profitability, we help you navigate the dropshipping landscape and turn your business ideas into reality!</p>
+                </div>
+				<div class="service-item">
+                    <h3>yt promotion and monetization</h3>
+                    <p>Our YouTube promotion and monetization team has over 5 years of experience in maximizing your channel's reach and revenue potential. We specialize in targeted promotion strategies, audience engagement, and optimizing content for monetization. Let us help you unlock your channel’s ultimate earning potential and achieve sustainable growth!</p>
+                </div>
+                <div class="service-item">
+                    <h3>SEO & Marketing</h3>
+                    <p>Our SEO and marketing team has over 5 years of experience in driving traffic and boosting online visibility. We implement tailored strategies that enhance search rankings, optimize content, and engage your target audience. Let us help you delve into effective marketing solutions that achieve your ultimate business goals!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
